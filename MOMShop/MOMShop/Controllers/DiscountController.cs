@@ -18,6 +18,20 @@ namespace MOMShop.Controllers
             _services = services;
         }
 
+        [HttpGet("get-all-by-status")]
+        public List<DiscountDto> GetAll(int status)
+        {
+            try
+            {
+                var result = _services.GetAllByStatus(status);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         [HttpGet("find-all")]
         public List<DiscountDto> GetAll(FilterDiscountDto input)
         {
@@ -102,7 +116,7 @@ namespace MOMShop.Controllers
         }
 
         [HttpPut("check-discount")]
-        public int CheckDiscount(string discountCode)
+        public int CheckDiscount([FromQuery] string discountCode)
         {
             try
             {

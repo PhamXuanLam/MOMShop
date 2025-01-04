@@ -23,12 +23,13 @@ export class CheckOutComponent {
   totalPrice: number; // tổng tiền chưa bao gồm mã giảm phí ship
   totalAmount: number = 0;
   products: any[] = [];
+  discounts: any[] = [];
   baseUrl = 'http://localhost:5001';
   discount = 0;
   isPayment;
   userInfo: UserDto = new UserDto();
-  constructor(private http: HttpClient, private router: Router,private cartService: UserCartService,
-    private userService: UserService,public toastr: ToastrService,
+  constructor(private http: HttpClient, private router: Router, private cartService: UserCartService,
+    private userService: UserService, public toastr: ToastrService,
     private userOrderService: UserOrderService,
     private discountService: DiscountService,
     private route: ActivatedRoute) {
@@ -37,9 +38,10 @@ export class CheckOutComponent {
     // });
     this.getProducts();
     this.getUserInfo();
+    this.getDiscouts();
   }
 
-  getProducts(){
+  getProducts() {
     this.cartService.getAllCart().pipe(finalize(() => {
       this.calSumPrice();
     })).subscribe((res) => {
@@ -49,17 +51,42 @@ export class CheckOutComponent {
 
   }
 
-  priceChange(){
+  getDiscouts() {
+    this.discountService.getAllCartByStatus().pipe(finalize(() => {
+      this.calSumPrice();
+    })).subscribe((res) => {
+      this.discounts = res;
+    })
+  }
+  saleOffChange($event: any) {
+    const selectedValue = ($event.target as HTMLSelectElement).value;
+    let button = document.querySelector<HTMLElement>(".buttton-use");
+    this.saleOffs = selectedValue;
+    if (this.saleOffs.trim() !== "") {
+      button.style.backgroundColor = "#338dbc";
+      // button.setAttribute('disabled', 'false');
+    }
+    else {
+      button.style.backgroundColor = "#c8c8c8";
+      // button.setAttribute('enabled', 'enabled');
+    }
+    if (this.discount > 0) {
+      this.toastr.warning('Mã giảm giá bị hủy!');
+      this.discount = 0;
+      this.calSumPrice();
+    }
+  }
+  priceChange() {
     this.totalPrice = 0;
     this.products.map(e => {
-      this.totalPrice += (e.quantity*e.price);
+      this.totalPrice += (e.quantity * e.price);
     })
     this.user = JSON.parse(localStorage.getItem('user'));
     console.log(this.user);
-    
+
   }
-  getUserInfo(){
-    this.userService.findUser().subscribe((res:any) => {
+  getUserInfo() {
+    this.userService.findUser().subscribe((res: any) => {
       // console.log(res);
       this.userInfo = res;
     })
@@ -69,42 +96,43 @@ export class CheckOutComponent {
     this.router.navigateByUrl('/login')
   }
   saleOff() {
-    var button = document.querySelector<HTMLElement>(".buttton-use");
+    var button = document.querySelector<HTMLElement>(".buttton-use"); // code smell :))))
     var input = document.querySelector<HTMLElement>(".input-sale-off");
     if (this.saleOffs.trim() !== "") {
       button.style.backgroundColor = "#338dbc";
-     // button.setAttribute('disabled', 'false');
+      // button.setAttribute('disabled', 'false');
     }
     else {
       button.style.backgroundColor = "#c8c8c8";
-     // button.setAttribute('enabled', 'enabled');
+      // button.setAttribute('enabled', 'enabled');
     }
-    if(this.discount > 0){
+    if (this.discount > 0) {
       this.toastr.warning('Mã giảm giá bị hủy!');
-      this.discount = 0 ;
+      this.discount = 0;
       this.calSumPrice();
     }
   }
 
-  useDisCount(){
-    this.discountService.applyDiscount(this.saleOffs).subscribe((res:any) => {
-      if(res == 0) {
-        this.toastr.warning('Mã không hợp lệ');
-        this.discount = 0;
-      }
-      else if(this.saleOffs == '1'){
-        this.toastr.success('Áp dụng mã thành công');
-        this.discount = res;
-      }
+  useDisCount() {
+    this.discountService.applyDiscount(this.saleOffs).subscribe((res: any) => {
+      // if(res == 0) {
+      //   this.toastr.warning('Mã không hợp lệ');
+      //   this.discount = 0;
+      // }
+      // else if(this.saleOffs == '1'){
+      //   this.toastr.success('Áp dụng mã thành công');
+      //   this.discount = res;
+      // }
+      this.discount = res;
       this.calSumPrice();
     })
   }
 
-  calSumPrice(){
-    this.totalAmount = this.totalPrice + 30000 - this.totalPrice*this.discount/100;
+  calSumPrice() {
+    this.totalAmount = this.totalPrice + 30000 - this.totalPrice * this.discount / 100;
   }
 
-  completeCheckOut(){
+  completeCheckOut() {
     const input = Object.assign({}, {
       "id": 0,
       "orderCode": "string",
@@ -125,7 +153,7 @@ export class CheckOutComponent {
       "orderDetails": []
     });
 
-    if(this.products.length > 0){
+    if (this.products.length > 0) {
       this.products.forEach(e => {
         input.orderDetails.push({
           "productId": e.productId,
@@ -135,24 +163,24 @@ export class CheckOutComponent {
       });
     }
     //console.log(input);
-    this.userOrderService.addOrder(input).subscribe((res:any )=> {
+    this.userOrderService.addOrder(input).subscribe((res: any) => {
       console.log(res);
-      if (res.message != "done" && res.message != "hethang"){
+      if (res.message != "done" && res.message != "hethang") {
         this.redirectUrlFromApi(res.message);
       }
-      if (res.message == "hethang"){
+      if (res.message == "hethang") {
         this.toastr.info(
-          "Sản phẩm đã hết hàng" ,
+          "Sản phẩm đã hết hàng",
           "Thông báo",
           { timeOut: 3000 }
-          );
+        );
         this.router.navigateByUrl('/cart');
-      } else if (res.data != null){
+      } else if (res.data != null) {
         this.toastr.success(
-          "Tạo đơn hàng "+ res.data.orderCode + " thành công!" ,
+          "Tạo đơn hàng " + res.data.orderCode + " thành công!",
           "Thông báo",
           { timeOut: 3000 }
-          );
+        );
         //this.router.navigateByUrl('/order');
       }
     })
@@ -161,7 +189,7 @@ export class CheckOutComponent {
     const redirectUrl = url;
     window.location.href = redirectUrl;
   }
-  returnView(){
+  returnView() {
     this.router.navigateByUrl('/view');
   }
 }
