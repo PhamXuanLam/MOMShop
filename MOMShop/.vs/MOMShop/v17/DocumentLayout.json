@@ -1,34 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\",
+  "WorkspaceRootPath": "D:\\MOMShop\\MOMShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|c:\\users\\admin\\desktop\\b20dccn393\\momshop\\momshop\\momshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|d:\\momshop\\momshop\\momshop\\services\\implements\\discoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\services\\implements\\discoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|d:\\momshop\\momshop\\momshop\\controllers\\discountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\controllers\\discountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|d:\\momshop\\momshop\\momshop\\services\\interfaces\\idiscountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\services\\interfaces\\idiscountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|d:\\momshop\\momshop\\momshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|c:\\users\\admin\\desktop\\b20dccn393\\momshop\\momshop\\momshop\\controllers\\collectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\controllers\\collectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|c:\\users\\admin\\desktop\\b20dccn393\\momshop\\momshop\\momshop\\momshopdbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\momshopdbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|c:\\users\\admin\\desktop\\b20dccn393\\momshop\\momshop\\momshop\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|c:\\users\\admin\\desktop\\b20dccn393\\momshop\\momshop\\momshop\\migrations\\20230629115608_initentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\migrations\\20230629115608_initentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|c:\\users\\admin\\desktop\\b20dccn393\\momshop\\momshop\\momshop\\migrations\\20230629120314_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\migrations\\20230629120314_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|c:\\users\\admin\\desktop\\b20dccn393\\momshop\\momshop\\momshop\\migrations\\20241228031703_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\migrations\\20241228031703_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|d:\\momshop\\momshop\\momshop\\momshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DDA3DF33-650F-4754-AC72-CF1FAA7DF878}|MOMShop\\MOMShop.csproj|solutionrelative:momshop\\momshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,92 +30,78 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20241228031703_initdb.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Migrations\\20241228031703_initdb.cs",
-              "RelativeDocumentMoniker": "MOMShop\\Migrations\\20241228031703_initdb.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Migrations\\20241228031703_initdb.cs",
-              "RelativeToolTip": "MOMShop\\Migrations\\20241228031703_initdb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T07:55:38.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20230629120314_Init.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Migrations\\20230629120314_Init.cs",
-              "RelativeDocumentMoniker": "MOMShop\\Migrations\\20230629120314_Init.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Migrations\\20230629120314_Init.cs",
-              "RelativeToolTip": "MOMShop\\Migrations\\20230629120314_Init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T07:55:33.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20230629115608_initEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Migrations\\20230629115608_initEntity.cs",
-              "RelativeDocumentMoniker": "MOMShop\\Migrations\\20230629115608_initEntity.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Migrations\\20230629115608_initEntity.cs",
-              "RelativeToolTip": "MOMShop\\Migrations\\20230629115608_initEntity.cs",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAQwCUBAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T07:48:56.729Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CollectionController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Controllers\\CollectionController.cs",
-              "RelativeDocumentMoniker": "MOMShop\\Controllers\\CollectionController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Controllers\\CollectionController.cs",
-              "RelativeToolTip": "MOMShop\\Controllers\\CollectionController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Title": "DiscountController.cs",
+              "DocumentMoniker": "D:\\MOMShop\\MOMShop\\MOMShop\\Controllers\\DiscountController.cs",
+              "RelativeDocumentMoniker": "MOMShop\\Controllers\\DiscountController.cs",
+              "ToolTip": "D:\\MOMShop\\MOMShop\\MOMShop\\Controllers\\DiscountController.cs",
+              "RelativeToolTip": "MOMShop\\Controllers\\DiscountController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T07:48:46.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\MomShopDbContext\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "MOMShop\\MomShopDbContext\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\MomShopDbContext\\ApplicationDbContext.cs",
-              "RelativeToolTip": "MOMShop\\MomShopDbContext\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAYwCwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T07:48:21.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\appsettings.json",
-              "RelativeDocumentMoniker": "MOMShop\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\appsettings.json",
-              "RelativeToolTip": "MOMShop\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-28T03:11:37.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T18:08:45.29Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "MOMShop\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\B20DCCN393\\MomShop\\MOMShop\\MOMShop\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "MOMShop\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAQwEsAAAAAAAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MOMShop\\MOMShop\\MOMShop\\appsettings.json",
+              "RelativeDocumentMoniker": "MOMShop\\appsettings.json",
+              "ToolTip": "D:\\MOMShop\\MOMShop\\MOMShop\\appsettings.json",
+              "RelativeToolTip": "MOMShop\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-03T18:29:50.728Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DiscoutService.cs",
+              "DocumentMoniker": "D:\\MOMShop\\MOMShop\\MOMShop\\Services\\Implements\\DiscoutService.cs",
+              "RelativeDocumentMoniker": "MOMShop\\Services\\Implements\\DiscoutService.cs",
+              "ToolTip": "D:\\MOMShop\\MOMShop\\MOMShop\\Services\\Implements\\DiscoutService.cs",
+              "RelativeToolTip": "MOMShop\\Services\\Implements\\DiscoutService.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAEwE8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T07:55:46.309Z"
+              "WhenOpened": "2025-01-03T18:34:27.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDiscountService.cs",
+              "DocumentMoniker": "D:\\MOMShop\\MOMShop\\MOMShop\\Services\\Interfaces\\IDiscountService.cs",
+              "RelativeDocumentMoniker": "MOMShop\\Services\\Interfaces\\IDiscountService.cs",
+              "ToolTip": "D:\\MOMShop\\MOMShop\\MOMShop\\Services\\Interfaces\\IDiscountService.cs",
+              "RelativeToolTip": "MOMShop\\Services\\Interfaces\\IDiscountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T18:33:35.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MOMShop.csproj",
+              "DocumentMoniker": "D:\\MOMShop\\MOMShop\\MOMShop\\MOMShop.csproj",
+              "RelativeDocumentMoniker": "MOMShop\\MOMShop.csproj",
+              "ToolTip": "D:\\MOMShop\\MOMShop\\MOMShop\\MOMShop.csproj",
+              "RelativeToolTip": "MOMShop\\MOMShop.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-29T02:40:05.163Z"
             }
           ]
         }

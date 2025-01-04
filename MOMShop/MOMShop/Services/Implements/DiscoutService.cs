@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using DocumentFormat.OpenXml.Office2010.Excel;
+using Microsoft.EntityFrameworkCore;
 using MOMShop.Dto.Discount;
 using MOMShop.Entites;
 using MOMShop.MomShopDbContext;
@@ -73,6 +75,16 @@ namespace MOMShop.Services.Implements
                                                         && (input.Status == null || input.Status == e.Status))).ToList();
 
             return _mapper.Map<List<DiscountDto>>(result);
+        }
+
+        public List<DiscountDto> GetAllByStatus(int status)
+        {
+            var check = _dbContext.Discounts.Where(d => d.Status == status).ToList();
+            if (check != null)
+            {
+                return _mapper.Map<List<DiscountDto>>(check);
+            }
+            return null;
         }
 
         public DiscountDto Update(DiscountDto input)
