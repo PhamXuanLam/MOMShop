@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class DiscountService {
   baseUrl = 'http://localhost:5001/api/discount/';
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
   // getAllCart(): Observable<any> {
   //   const user = JSON.parse(localStorage.getItem('user'));
   //   return this.http.get(this.baseUrl + 'get-all' +'?customerId=' + user.id);
@@ -23,8 +23,10 @@ export class DiscountService {
   //       "size": size
   //     },{responseType: 'text'});
   //   }
-
+  getAllCartByStatus(): Observable<any> {
+    return this.http.get(this.baseUrl + 'get-all-by-status' + '?status=1');
+  }
   applyDiscount(discountCode: any) {
-      return this.http.put(this.baseUrl + 'check-discount', discountCode);
+    return this.http.put(this.baseUrl + 'check-discount?discountCode=' + discountCode, null);
   }
 }
